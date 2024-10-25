@@ -89,16 +89,17 @@ export function searchproduct() {
       color: "white",
     },
   ]
-  const [selectedCategories, setSelectedCategories] = useState([])
-  const [selectedColors, setSelectedColors] = useState([])
-  const handleCategoryChange = (category) => {
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+
+  const [selectedColors, setSelectedColors] = useState<string[]>([]);
+  const handleCategoryChange = (category:string) => {
     if (selectedCategories.includes(category)) {
       setSelectedCategories(selectedCategories.filter((c) => c !== category))
     } else {
       setSelectedCategories([...selectedCategories, category])
     }
   }
-  const handleColorChange = (color) => {
+  const handleColorChange = (color:string) => {
     if (selectedColors.includes(color)) {
       setSelectedColors(selectedColors.filter((c) => c !== color))
     } else {
@@ -217,7 +218,7 @@ export function searchproduct() {
   )
 }
 
-function ChevronDownIcon(props) {
+function ChevronDownIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

@@ -1,10 +1,10 @@
 
 
-export default function searchitems({props}:{props:String}){
+export default function searchitems(){
 
     return(
         <>
-        {props}
+       
         </>
     )
 }
