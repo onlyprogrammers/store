@@ -1,3 +1,3 @@
-import { searchproduct } from "@/components/component/searchproduct";
+import { Searchproduct } from "@/components/component/searchproduct";
 
-export default searchproduct;
+export default Searchproduct;
